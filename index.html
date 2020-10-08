@@ -8,7 +8,9 @@ title: home
 <ul>
   {% for chapter in site.collections %}
   <li>
-    {{ chapter.label }}
+    {% unless chapter.label == "posts" %}
+      {{ chapter.label }}
+    {% endunless %}
     <ul>
     {% for section in site[chapter.label] %}
       <li><a href="{{ section.url | relative_url }}">{{ section.title }}</a></li>
