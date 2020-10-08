@@ -6,3 +6,9 @@ url: https://reedeeng.github.io/book
 baseurl: /book
 
 permalink: pretty
+
+collections:
+  chapter-1:
+    output: true
+  chapter-2:
+    output: true
