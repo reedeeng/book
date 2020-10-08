@@ -8,9 +8,10 @@ baseurl: /book
 permalink: pretty
 
 collections:
-  posts:
-    output: false
   chapter-1:
     output: true
   chapter-2:
     output: true
+
+exclude:
+  - _posts
