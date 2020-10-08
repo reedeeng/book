@@ -14,4 +14,4 @@ collections:
     output: true
 
 exclude:
-  - _posts
+  - posts
