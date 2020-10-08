@@ -9,7 +9,7 @@ title: home
   {% for chapter in site.collections %}
   <li>
     {{ chapter.label }}
-    {% for section in site.collections[label] %}
+    {% for section in site[chapter.label] %}
     <li>{{ section.title }}</li>
     {% endfor %}
   </li>
