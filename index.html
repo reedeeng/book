@@ -11,7 +11,7 @@ title: home
     {{ chapter.label }}
     <ul>
     {% for section in site[chapter.label] %}
-      <li><a href="{{ section.url }}">{{ section.title }}</a></li>
+      <li><a href="{{ section.url | relative_url }}">{{ section.title }}</a></li>
     {% endfor %}
     </ul>
   </li>
