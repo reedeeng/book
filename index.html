@@ -7,6 +7,11 @@ title: home
 
 <ul>
   {% for chapter in site.collections %}
-  <li>{{ chapter.label }} • {{ chapter.url }} • {{ chapter.relative_directory }}</li>
+  <li>
+    {{ chapter.label }}
+    {% for section in site.collections[label] %}
+    <li>{{ section.title }}</li>
+    {% endfor %}
+  </li>
   {% endfor %}
 </ul>
