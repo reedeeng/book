@@ -12,7 +12,9 @@ title: home
     {{ chapter.label }}
     <ul>
     {% for section in site[chapter.label] %}
+      {% unless section.title == "index" %}
       <li><a href="{{ section.url | relative_url }}">{{ section.title }}</a></li>
+      {% endunless %}
     {% endfor %}
     </ul>
   </li>
