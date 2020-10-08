@@ -12,8 +12,8 @@ title: home
     {{ chapter.label }}
     <ul>
     {% for section in site[chapter.label] %}
-      {% unless section.collection == "index" %}
-      <li><a href="{{ section.url | relative_url }}">{{ section.collection }}</a></li>
+      {% unless section.relative_path == "index" %}
+      <li><a href="{{ section.url | relative_url }}">{{ section.title }}</a></li>
       {% endunless %}
     {% endfor %}
     </ul>
