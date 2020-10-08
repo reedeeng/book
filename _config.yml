@@ -13,5 +13,3 @@ collections:
   chapter-2:
     output: true
 
-exclude:
-  - posts
