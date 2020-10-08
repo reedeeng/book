@@ -9,7 +9,7 @@ title: home
   {% for chapter in site.collections %}
   {% unless chapter.label == "posts" %}
   <li>
-    {{ chapter.label }}
+    <a href="{{ chapter.label | relative_url }}">{{ chapter.label }}</a>
     <ul>
     {% for section in site[chapter.label] %}
       {% unless section.title == "index" %}
