@@ -1,6 +1,6 @@
 ---
-layout: default
+layout: section
 title: section 1.1
 ---
 
-<h1>{{ page.title }}</h1>
+isi section 
