@@ -7,5 +7,5 @@ layout: default
 {{ content }}
 
 {% for section in site.collections | where: "label", "{{ page.chapter }}" %}
-<li>{{ section.url }}</li>
+<li>{{ section.path }}</li>
 {% endfor %}
