@@ -1,9 +1,9 @@
 ---
 layout: chapter
 title: chapter one
-collection: chapter-1
+uniq: chapter-1
 ---
-
-{% for section in site.collections[page.collection] %}
+ello
+{% for section in site.collections[page.uniq] %}
 <li>{{ section.title }}</li>
 {% endfor %}
