@@ -4,7 +4,6 @@ title: chapter one
 collection: chapter-1
 ---
 
-{% assign this-chapter = page.collection %}
-{% for section in site.collections.this-chapter %}
+{% for section in site.collections[page.collection] %}
 <li>{{ section.title }}</li>
 {% endfor %}
