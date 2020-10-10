@@ -6,6 +6,6 @@ layout: default
 
 {{ content }}
 
-{% for section in site.collections | where: "label", "{{ page.chapter }}" %}
-<li>{{ section.path }}</li>
+{% for section in site.collections | where: "chapter", "{{ page.chapter }}" %}
+<li>{{ section.title }}</li>
 {% endfor %}
