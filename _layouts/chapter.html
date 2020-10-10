@@ -8,10 +8,10 @@ layout: default
 
 <h2>on this chapter</h2>
 <ul>
-{% for section in site[page.chapter] %}
+{% for section in site[page.collection] %}
 {% assign exclude-file = "index" %}
   {% unless section.relative_path contains exclude-file %}
-  <li><a href="{{ section.url }}">{{ section.title }}</a></li>
+  <li><a href="{{ section.url | relative_url }}">{{ section.title }}</a></li>
   {% endunless %}
 {% endfor %}
 </ul>
