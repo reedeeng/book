@@ -10,7 +10,7 @@ layout: default
 <ul>
 {% for section in site[page.chapter] %}
 {% assign exclude-file = "index" %}
-  {% unless section.relative_path contains "exclude-file" %}
+  {% unless section.relative_path contains exclude-file %}
   <li><a href="{{ section.url }}">{{ section.title }}</a></li>
   {% endunless %}
 {% endfor %}
