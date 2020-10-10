@@ -1,4 +1,5 @@
 ---
 layout: chapter
-title: section two
+title: chapter two
+collection: chapter-two
 ---
