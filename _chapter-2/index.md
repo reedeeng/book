@@ -1,5 +1,5 @@
 ---
 layout: chapter
 title: chapter two
-collection: chapter-two
+chapter: chapter-2
 ---
