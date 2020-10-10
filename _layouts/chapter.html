@@ -6,6 +6,12 @@ layout: default
 
 {{ content }}
 
+<h2>on this chapter</h2>
+<ul>
 {% for section in site[page.chapter] %}
-<li>{{ section.title }}</li>
+{% assign exclude-file = "index" %}
+  {% unless section.relative_path contains "exclude-file" %}
+  <li><a href="{{ section.url }}">{{ section.title }}</a></li>
+  {% endunless %}
 {% endfor %}
+</ul>
