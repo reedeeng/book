@@ -9,10 +9,12 @@ permalink: pretty
 
 collections:
   chapter-1:
-    label: chapter one
+    title: chapter one
     output: true
   chapter-2:
+    title: chapter two
     output: true
   chapter-3:
+    title: chapter three
     output: true
 ---
